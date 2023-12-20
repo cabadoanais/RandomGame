@@ -25,13 +25,13 @@ function comprobarNumeroAleatorio() {
 
     if (numeroUsuario === randomNumber) {
         exitosos++;
-        localStorage.setItem(`resultado`, `exitosos`);
+        localStorage.setItem(`exitosos`, exitosos);
         resultado.innerHTML = `Muy bien!`;
         estadisticas.innerHTML = `Éxitos: ${exitosos}, fallos: ${fallidos}`;
         generarNumeroAleatorio()
     } else {
         fallidos++;
-        localStorage.setItem(`resultado`, `fallidos`);
+        localStorage.setItem(`fallidos`, fallidos);
         resultado.innerHTML = `Fallaste!`;
         estadisticas.innerHTML = `Éxitos: ${exitosos}, fallos: ${fallidos}`;
     }
