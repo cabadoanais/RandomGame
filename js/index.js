@@ -57,6 +57,6 @@ limpiar.addEventListener(`click`, limpiadoraDatos);
 
 // Códigos de inicio
 
-estadisticas.innerHTML = `Éxitos: 0, Fallos: 0`;
+estadisticas.innerHTML = `Éxitos: ${exitosos}, fallos: ${fallidos}`;
 
 generarNumeroAleatorio()
